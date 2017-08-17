@@ -1,0 +1,49 @@
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+#colorbox {position: fixed;}
+#cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:7; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%; z-index: 11;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; overflow:visible;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+
+/* 
+    ColorBox example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay{
+	background:#000;
+	}
+
+#colorbox{}
+    #cboxContent{
+		background:#fff;	
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+	}
+        #cboxLoadedContent{	
+		padding: 7px;}
+        #cboxLoadingOverlay{}
+        #cboxLoadingGraphic{background: #fff url(../../im/loader.gif) center center no-repeat;
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;}
+        #cboxTitle{position:absolute; bottom:-25px; left:0; text-align:center; width:100%; font-weight:bold; color:#7C7C7C; display: none;}
+        #cboxCurrent{position:absolute; bottom:-25px; left:58px; font-weight:bold; color:#7C7C7C;}
+        
+        #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{position:absolute; text-indent:-9999px; cursor: pointer;}
+        #cboxPrevious{left:200px; bottom: 18px; background: url(../../im/lightbox-prev.png) 0 0 no-repeat; width: 14px; height: 15px;}
+        #cboxNext{left:240px; bottom: 18px; background: url(../../im/lightbox-next.png) 0 0 no-repeat; width: 14px; height: 15px;}
+        #cboxClose{right:10px; top: 16px;  background: url(../../im/lightbox-close.png) 0 0 no-repeat; width: 5%; height: 5%;}
+        
+        .cboxSlideshow_on #cboxSlideshow{background-position:-125px 0px; right:27px;}
+        .cboxSlideshow_on #cboxSlideshow.hover{background-position:-150px 0px;}
+        .cboxSlideshow_off #cboxSlideshow{background-position:-150px -25px; right:27px;}
+        .cboxSlideshow_off #cboxSlideshow.hover{background-position:-125px 0px;}

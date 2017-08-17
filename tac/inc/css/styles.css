@@ -1,0 +1,889 @@
+/*
+Stylesheet for The Adventus Consultants' site. 
+Created 26 May 2010
+Last edited 17 June 2010
+
+CONTENTS 
+To go to particular section, bring up the Find/Search function and input for desired section from table of contents below. 
+=========================
+1. Global Styles
+2. Typography
+3. Links
+4. Navigation
+5. Content
+6. Footer
+=========================
+
+=====1. Global Styles====
+*/
+
+html {
+	font-size: 100%;
+	}
+	
+body {
+	font: 62.5%/1.3 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	}
+	
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	}
+	
+#masthead {
+	padding-top: 30px;
+	margin-bottom: 36px;
+	}
+
+#worksPage {
+	background: #4a94d0 url(../../im/texture-works.png) top left repeat;
+	}
+	
+#labsPage {
+	background: #9873b8 url(../../im/texture-labs.png) top left repeat;
+	}
+	
+#homePage {
+	background: #fbac02 url(../../im/texture-home.png) top left repeat;
+}
+
+#aboutPage {
+	background: #68af09 url(../../im/texture-about.png) top left repeat;
+}
+
+img a {
+	border: none;
+	}
+	
+.clearMargin {
+	margin: 0;
+	}
+	
+.clear {
+	clear: both;
+}
+		
+/*==== 2. Typography ====*/
+
+@font-face {
+	font-family: 'FertigoProRegular';
+	src: url('../fonts/fertigo_pro-webfont.eot');
+	src: local('☺'), url('../fonts/fertigo_pro-webfont.woff') format('woff'), url('../fonts/fertigo_pro-webfont.ttf') format('truetype'), url('../fonts/fertigo_pro-webfont.svg#webfontvSkIVjYt') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1, h2, h3 {
+	font-family: 'FertigoProRegular', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	text-transform: capitalize;
+	}
+	
+h1, h2 {
+	font-size: 4em;
+	line-height: 1.2em;
+	margin-bottom: 0.4em;
+	}
+	
+h3 {
+	font-size: 1.8em;
+	}
+	
+h4 {
+	font-size: 1.2em;
+	
+}
+
+p, span {
+	font-size: 1.2em;
+	margin-bottom: 1.1em;
+	}
+	
+	
+/*==== 3. Links ====*/
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1.0em;
+	}
+	
+a:hover {
+	text-decoration: underline;
+	}
+
+/*==== 4. Navigation ====*/
+	
+#nav {
+	float: right;
+	}
+	
+#nav li {
+	float: left;
+	text-indent: -9999px;
+	}
+	
+#nav li a {
+	display: block;
+	height: 71px;
+	}
+	
+li#home a {
+	background: url(../../im/nav.png) 0 0 no-repeat;
+	width: 63px;
+	margin-right: 19px;
+	-webkit-transition: background-position .2s linear;
+	}
+	
+li#home a:hover, #homePage li#home a {
+	background-position: 0 -17px;
+	} 
+	
+li#works a {
+	background: url(../../im/nav.png) -82px 0 no-repeat;
+	width: 55px;
+	margin-right: 13px;
+	-webkit-transition: background-position .2s linear;
+	}
+	
+li#works a:hover, #worksPage li#works a {
+	background-position: -82px -17px;
+	}
+	
+li#labs a {
+	background: url(../../im/nav.png) -150px 0 no-repeat;
+	width: 64px;
+	margin-right: 21px;
+	-webkit-transition: background-position .2s linear;
+	}
+	
+li#labs a:hover, #labsPage li#labs a {
+	background-position: -150px -17px;
+	}
+	
+li#about a {
+	background: url(../../im/nav.png) -235px 0 no-repeat;
+	width: 50px;
+	-webkit-transition: background-position .2s linear;
+	}
+	
+li#about a:hover, #aboutPage li#about a  {
+	background-position: -235px -17px;
+	}
+		
+#subnav {
+	font: 1.6em 'FertigoProRegular', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom: 40px;
+	}
+	
+#subnav a {
+	margin: 0 8px;	
+	padding-bottom: 3px;
+	-webkit-transition: border .2s ease-in;
+	border-bottom: 3px solid rgba(255,255,255,0);
+	}
+	
+#subnav a:first-child {
+	margin-left: 0;
+	}
+	
+#subnav a:hover, #subnav a.active {
+	text-decoration: none;
+	border-bottom: 3px solid rgba(255,255,255,1);
+	}
+	
+	
+/*===== 5. Content =====*/	
+#twit {
+	position: relative;
+	margin-left: 20px;
+
+}
+
+#twitBubble {
+	background: url(../../im/twit-bubble.png) top left no-repeat;
+	width: 548px;
+	height: 319px;
+}
+
+#twitBubbleText {
+	position: relative;
+	width: 430px;
+	margin: auto;
+	top: 90px;
+	text-align: center;
+}
+
+#twitBubbleText p.quote {
+	font-size: 2.2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+	
+}
+
+#twitBubbleText li {
+	display: none;
+	}
+
+#twitBubbleText p > span {
+	color: #d51c38;
+	font-size: 1.0em;
+}
+
+#twitIcon {
+	position:relative;
+	left: 204px;
+	top: 26px;
+}
+
+#crayonWorks {
+	margin: auto;
+	position: relative;
+	top: -40px;
+}
+
+#crayonIcon {
+	position:relative;
+	left: 230px;
+	bottom: 10px;
+}
+
+#crayonFeaturedWork {
+	background: url(../../im/featured-work.png) no-repeat;
+	font-size: 1.4em;
+	color: #ffffff;
+	display: block;
+	position: absolute;
+	top: 110px;
+	left: 70px;
+	width: 147px;
+	height: 28px;
+	padding-top: 12px;
+	text-align: center;
+	z-index: 3;
+	-moz-transform: rotate(-3deg);
+	-webkit-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+}
+
+#crayonFeaturedWork h4 {
+	font-size: 1.0em;
+}
+#crayonFeaturedDescription {
+	background: url(../../im/featured-work-desc.png) no-repeat;
+	width: 232px;
+	height: 70px;
+	padding-top: 20px;
+	display: block;
+	position: absolute;
+	top: 140px;
+	left: 0px;
+	z-index: 2;
+	text-align:center;
+}
+
+#crayonFeaturedDescription span {
+	font-size: 1.8em;
+	color: #ffffff;
+	-moz-transform: rotate(3deg);
+	-webkit-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+}
+
+#crayonBubble {
+	background: url(../../im/work-bubble.png) top left no-repeat;
+	width: 497px;
+	height: 396px;
+	display: block;
+	left: 160px;
+	position: relative;
+	top: 40px;
+	z-index: 1;
+}
+
+#crayonBubble img {
+	position: relative;
+	left: 26px;
+	top: 26px;
+	-moz-transform: rotate(4deg);
+	-webkit-transform: rotate(4deg);
+	-o-transform: rotate(4deg);
+}
+
+#labRat {
+	position: relative;
+	top: -40px;
+}
+
+#ratFeaturedWork {
+	background: url(../../im/featured-exp.png) no-repeat;
+	font-size: 1.4em;
+	color: #ffffff;
+	display: block;
+	position: absolute;
+	bottom: 200px;
+	right: 70px;
+	width: 196px;
+	height: 39px;
+	padding-top: 24px;
+	text-align: center;
+	z-index: 3;
+	-moz-transform: rotate(8deg);
+	-webkit-transform: rotate(8deg);
+	-o-transform: rotate(8deg);
+}
+
+#ratFeaturedWork h4 {	
+	font-size: 1.0em;
+}
+
+#ratFeaturedDescription {
+	background: url(../../im/featured-exp-desc.png) no-repeat;
+	width: 252px;
+	height: 71px;
+	padding: 20px 10px 0;
+	display: block;
+	position: absolute;
+	bottom: 120px;
+	right: 0px;
+	z-index: 2;
+	text-align:center;
+}
+
+#ratFeaturedDescription span {
+	font-size: 1.6em;
+	color: #ffffff;
+	-moz-transform: rotate(3deg);
+	-webkit-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+}
+
+#ratBubble {
+	background: url(../../im/lab-bubble.png) top left no-repeat;
+	width: 480px;
+	height: 383px;
+	display: block;
+	position: relative;
+	top: 60px;
+}
+
+#ratBubble img {
+	position: relative;
+	left: 16px;
+	top: 18px;
+	-moz-transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+}
+
+#ratIcon {
+	position: relative;
+	left: 240px;
+}
+
+p.indexInstruct {
+	clear: both;
+	color: #ffffff;
+	font: 1.4em 'FertigoProRegular', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 20px;
+	margin-left: -74px;
+	text-align: center;
+}
+
+.pageTitle {
+	color: #ffffff;
+	font-size: 2.4em;
+	font-weight: normal;
+	margin-bottom: 15px;
+	}
+		
+.featuredImg {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 28px;
+	}
+
+.featuredCopy {
+	float: left;
+	width: 480px;
+	}
+	
+a.viewProject, a.launchProject, a.viewExperiment, a.launchExperiment {
+	background: url(../../im/button-bg.png) no-repeat;
+	height: 34px;
+	color: #fbb102;
+	font: 1.6em 'FertigoProRegular', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	display: block;
+	clear: both;
+	-webkit-transition: color .15s ease-in;
+	left: -6px;
+	position: relative;
+	margin-top: 10px;
+	}
+	
+a.viewProject {
+	padding: 19px 0 0 34px;
+	width: 132px;
+}
+	
+a.launchProject {
+	padding: 19px 0 0 24px;
+	width: 142px
+}
+
+a.viewExperiment {
+	padding: 19px 0 0 22px;
+	width: 144px;
+}
+
+a.launchExperiment {
+	padding: 19px 0 0 12px;
+	width: 154px;
+}	
+a.viewProject:hover, a.launchProject:hover, a.viewExperiment:hover, a.launchExperiment:hover {
+	text-decoration: none;
+	color: #ffffff;
+	cursor: pointer;
+	}
+	
+#footerGallery {
+	margin-top: 28px;
+	width: 100%;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	padding: 16px 0;
+	overflow: auto;
+	clear: both;
+	}
+	
+#worksGallery {
+	width: 100%;
+	border-bottom: 1px solid #ffffff;
+	padding: 0 0 16px;
+	overflow: auto;
+	clear: both;
+}
+	
+.galleryRow {
+	margin: 10px 0 20px;
+	overflow: auto;
+	}	
+
+.galleryRow li {
+	position: relative;
+	float: left;
+	margin-right: 20px;
+	}
+
+.galleryRow li:last-child {
+	margin-right: 0;
+	}
+	
+.galleryRow+h3 {
+	padding-top: 1.3em;
+}
+
+#mycarousel a {
+	text-decoration: none;
+}
+.description {
+	position: absolute; /* absolute position (so we can position it where we want)*/
+	bottom: 0; /* position will be on bottom */
+	left: 0px;
+	display: none; /* hide it */
+	/* styling bellow */
+	background-color: black;
+	width: 100%;
+	}
+	
+.description p {
+	padding: 10px;
+	color: #ffffff;
+	}	
+	
+.description p > span {
+	color: #fbb102;
+	font-size: 1.0em;
+	}
+	
+.galleryThumb {
+		width: 225px;
+		height: 160px;
+}
+
+#processVideo {
+	width: 590px;
+	float: left;
+	display: block;
+	overflow: auto;
+	font-family: 'FertigoProRegular', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+}
+
+#iconProjector {
+	float: left;
+}
+
+#projectorBubble {
+	background: url(../../im/belief_bubble.png) no-repeat;
+	width: 161px;
+	height: 173px;
+	padding: 10px 73px;
+	z-index: 5;
+	position: relative;
+	text-align: center;
+	left: 20px;
+}
+
+#projectorBubble h3 {
+	color: #7cd206;
+	margin: 10px;
+}
+
+#projectorBubble p {
+	font: bold 3.2em/0.9em 'FertigoProRegular', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+#projectorBubble p > span {
+	font-size: 0.6em;
+	color: #7cd206;
+	font-weight: bold;
+	text-transform: none;
+}
+
+blockquote.motto {
+	color: #fff;
+	font: 2.4em 'FertigoProRegular', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	margin: 12px 0 0;
+}
+
+blockquote.motto p span {
+	padding-left: 40px;
+}
+
+blockquote.motto cite {
+	font-size: 0.7em;
+	font-style: normal;
+	left: 300px;
+	position: relative;
+	top: -32px;
+}
+
+p.philosophy {
+	font-size: 1.4em;
+	margin-bottom: 44px;
+}
+
+#iconProjector img {
+	position: relative;
+	bottom: 10px;
+}
+
+#beliefCopy {
+	clear: both;
+}
+
+#servicesCopy {
+	float: left;
+	font: 1.2em 'FertigoProRegular', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	width: 430px;
+	padding-right: 28px;
+
+}
+
+#servicesCopy ul {
+	margin-bottom: 2.4em;
+}
+#servicesCopy li {
+	list-style: none;
+	background: url(../../im/list-arrow.png) 0 3px no-repeat;
+	padding-left: 18px;
+	font-size: 1.2em;
+	margin-bottom: 0.4em;
+}
+
+img.services {
+	float: right;
+}
+
+.col1, .col2 {
+	float: left;
+}
+
+.col1 {
+	margin-right: 30px;
+}
+/* Styles for carousel */
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 860px;
+    padding: 20px 20px 20px 60px;
+
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  830px;
+    height: 160px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 225px;
+    height: 160px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+    margin-right: 75px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: transparent url(../../im/next.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: transparent url(../../im/prev.png) no-repeat 0 0;
+}
+
+/*gallery styles */
+div.content {
+	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
+	display: none;
+	/*float: right;*/
+	width: 450px; 
+}
+div.content a, div.navigation a {
+	text-decoration: none;
+	color: #777;
+}
+div.content a:focus, div.content a:hover, div.content a:active {
+	text-decoration: underline;
+}
+
+div.slideshow-container {
+	position: relative;
+	clear: both;
+	height: 320px; /* This should be set to be at least the height of the largest image in the slideshow */
+	padding-bottom: 32px;
+}
+div.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../../im/loader.gif);
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 450px;
+	height: 320px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+div.slideshow {
+
+}
+div.slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div.slideshow a.advance-link {
+	display: block;
+	width: 450px;
+	height: 320px; /* This should be set to be at least the height of the largest image in the slideshow */
+
+	text-align: center;
+}
+div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+div.slideshow img {
+	vertical-align: middle;
+}
+div.navigation {
+	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
+}
+ul.thumbs {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+ul.thumbs li {
+	float: left;
+	padding: 0;
+	margin: 5px 12px 5px 0;
+	list-style: none;
+	cursor: pointer;
+}
+
+.thumbs li:last-child {
+	margin-right: 0;
+}
+
+a.thumb {
+	display: block;
+	
+}
+ul.thumbs li.selected a.thumb {
+
+	outline: 2px solid #ffffff;
+}
+a.thumb:focus {
+	outline: none;
+}
+ul.thumbs img {
+	border: none;
+	display: block;
+	width: 80px;
+	height: 57px;
+}
+
+div.navigation div.top {
+	margin-bottom: 12px;
+	height: 11px;
+}
+div.navigation div.bottom {
+	margin-top: 12px;
+}
+
+div.toonRow {
+	margin-left: 10px;
+	margin-bottom: 6px;
+}
+
+form#contact {
+	float: left;
+	margin-right: 20px;
+}
+
+form#contact label {
+	font: 1.4em 'FertigoProRegular', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+}
+
+form#contact input[type=text] {
+	margin-left: 12px;
+	background: transparent;
+	border: none;
+}
+
+form#contact textarea {
+	width: 320px;
+	height: 146px;
+	font: 1.1em 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	background: transparent;
+	border: none;
+}
+
+#contactName {
+	background-image: url(../../im/contact-name-bubble.png);
+	width: 315px;
+	height: 21px;
+	padding: 12px 20px;
+}
+
+#contactEmail {
+	background-image: url(../../im/contact-email-bubble.png);
+	width: 315px;
+	height: 20px;
+	padding: 12px 20px;
+}
+
+#contactName, #contactEmail, #contactMessage {
+	margin-bottom: 10px;
+}
+
+#contactMessage {
+	background-image: url(../../im/contact-msg-bubble.png);
+	width: 317px;
+	height: 170px;
+	padding: 16px 20px;
+}
+
+form#contact input[type=submit] {
+	background: url(../../im/button-bg.png) no-repeat;
+	border: none;
+	width: 166px;
+	height: 53px;
+	color: #fbb102;
+	font: 1.6em 'FertigoProRegular', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	-webkit-transition: color .15s ease-in;
+	cursor: pointer;
+	margin: 12px 0 40px;
+}
+
+form#contact input[type=submit]:hover {
+	color: #ffffff;
+}
+
+#location {
+	float: left;
+	width: 580px;
+}
+
+#location img {
+	z-index: 1;
+	position: relative;
+	top: 38px;
+}
+
+
+#info {
+	background: transparent url(../../im/contact-details-bubble.png) no-repeat;
+	width: 471px;
+	height: 107px;
+	padding: 12px 18px;
+	z-index: 3;
+	position: absolute;
+	overflow: auto;
+	clear: both;
+}
+
+#info h3 {
+	font-size: 2.4em;
+	color: #7cd206;
+	font-weight: normal;
+	margin-bottom: 8px;
+}
+
+p.address, p.contact {
+	font: 1.4em 'FertigoProRegular', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	float: left;
+}
+
+p.address {
+	padding-right: 20px;
+}
+
+/*==== 6. Footer ====*/	
+
+#footer {
+	font: 1.1em 'FertigoProRegular', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	margin-top: 18px;
+	display: block;
+	clear: both;
+	}
+	
+#footer img {
+	margin-left: 8px;
+}

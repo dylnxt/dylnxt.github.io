@@ -1,0 +1,89 @@
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 680px;
+	height: 525px;
+	padding-bottom: 10px;
+	margin: auto;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width: 2000em;
+	position: absolute;
+	clear: both;
+}
+
+.items > div {
+	float:left;
+	width: 680px;
+}
+
+.scrollableContainer {
+	width: 300px;
+	margin: auto;
+	overflow: auto;
+}
+
+/* position and dimensions of the navigator */
+.navi {
+	/*width: 200px;*/
+	height: 21px;
+	display: block;
+	float: left;
+	margin: 0 20px;
+}
+
+
+/* items inside navigator */
+.navi a {
+	width:9px;
+	height:9px;
+	float:left;
+	margin: 6px 20px 0;
+	background: url(../../im/navi-btn.png)  0 0 no-repeat;
+	/*display:block;*/
+
+}
+
+/* mouseover state */
+.navi a:hover, .navi a.active {
+	background-position: -10px 0;      
+}
+
+a.browse {
+	
+}
+
+/* right */
+a.right { 
+	background: url(../../im/navi-next.png) no-repeat;
+	width: 21px;
+	height: 21px;
+	display:block;
+	cursor: pointer;
+	float: left;
+	}
+
+/* left */
+a.left { 
+	background: url(../../im/navi-prev.png) no-repeat;
+	width: 21px;
+	height: 21px;
+	display: block;	
+	cursor: pointer;
+	float:left;
+	}

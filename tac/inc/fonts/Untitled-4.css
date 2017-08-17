@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'FertigoProRegular';
+	src: url('../fonts/fertigo_pro-webfont.eot');
+	src: local('☺'), url('../fonts/fertigo_pro-webfont.woff') format('woff'), url('../fonts/fertigo_pro-webfont.ttf') format('truetype'), url('../fonts/fertigo_pro-webfont.svg#webfontvSkIVjYt') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+

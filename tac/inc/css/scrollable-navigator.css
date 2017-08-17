@@ -1,0 +1,25 @@
+
+/* position and dimensions of the navigator */
+.navi {
+	/*margin-left:328px;*/
+	width:236px;
+	height:20px;
+	float: left;
+}
+
+
+/* items inside navigator */
+.navi a {
+	width:9px;
+	height:9px;
+	float:left;
+	margin: 20px;
+	background: url(../../im/navi-btn.png)  0 0 no-repeat;
+	display:block;
+
+}
+
+/* mouseover state */
+.navi a:hover, .navi a.active {
+	background-position: -10px 0;      
+}
