@@ -1,0 +1,298 @@
+@import url(reset.css);
+
+body {
+	/*background: #3498db;*/
+	color: #333;
+    font-size: 100%;
+    font-family: 'sofia_prolight', sans-serif;  
+    line-height: 1.3333m;
+    background: #fdfdfd;
+}
+
+/*== Typography ==*/
+h1, h2, h3 {
+    font-family: sofiaregular, script;
+    text-align: center;
+    font-kerning: normal;
+}
+
+h1 {
+	font-size: 4.209em;
+    line-height: 1.6em;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.369em;
+    line-height:  1.4em;
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.777em;
+    margin-bottom: 1em;
+    color: #3498db;
+}
+
+h4 {
+    font-size: 1.333em;
+    text-transform: uppercase;
+}
+
+p, li, a, footer small {
+    font-size: 1em;
+    line-height: 1.333em;
+}
+
+p {
+    margin-bottom: 1.333em;
+}
+
+
+
+small {
+    font-size: .75em;
+}
+footer small {
+    font-family: sofiaregular, script;
+    font-kerning: auto;
+}
+
+a:link, a:visited {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+span.date {
+    font-family: 'sofia_prolight', sans-serif;
+    text-transform: uppercase;
+}
+
+#story, #wedding, #rsvp, #photos {
+    padding: 3.157em 0;
+}
+
+#rsvp {
+    background-color: #a2c4db;
+    text-align: center;
+}
+#wedding {
+    background: #a2c4db;  
+    overflow: auto;
+    padding-bottom: 0;
+}
+
+.map {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+img.icon {
+    max-width: 100%;
+    margin: 1.333em auto;
+    display: block;
+    
+}
+form {
+    text-align: center;
+}
+
+input[type='text'] {
+    width: 40%;
+    height: 1.777em;
+    margin-bottom: 3.157em;
+    margin-top: .55em;
+    border: none;
+    border-bottom: 1px solid #3498db;
+    background: transparent;
+}
+
+
+input[type='submit'] {
+    border: none;
+    background-color: #e82b69;
+    font-size: 1em;
+    color: #fff;
+    padding: .75em 1em;
+    border-bottom: 2px solid #700f32;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+nav {
+    overflow: auto;
+    background-color: #000;
+    opacity: .85;
+    padding: .75em 0;
+    width: 100%; 
+}
+
+
+nav li {
+    float: left;
+    /*text-align: center;      */
+}
+
+nav a:link, nav a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav a:hover, a.selected {
+    border-bottom: 2px solid #fff;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: .422em 0; 
+}
+
+
+        
+/*==media queries==*/
+@media all and (min-width: 20em) {
+    body {
+        font-size: 90%
+    }
+    nav ul {
+        margin: auto;
+        width: 90%;
+    }
+    nav li {
+        width: 43.75%;
+        margin: 0 3.125%;
+        padding-bottom: .238em;
+        text-align: center;
+    }
+    
+    #headline {
+        background: url(../img/bg_320.jpg) no-repeat center center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        padding-bottom: 2%;
+        /*padding: 5.61em 0 1em;*/
+        /*padding: 3.157em 0;*/
+        font-size: 85%;
+    }
+    
+    #headline section {
+        /*border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;*/
+        width: 80%;
+        position: relative;
+        /*top: 2.369em;*/
+    }
+    
+    
+    section {
+        width: 90%;
+        margin: auto;
+    }
+    
+    #wedding section {
+        text-align: center;
+    }
+    
+    #wedding .driving {
+        text-align: left;
+    }
+    
+    .map, .fotorama {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 30em) {
+    #headline {
+        background: url(../img/bg_480.jpg) no-repeat center center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        padding-bottom: 30.03%;      
+    }
+    
+    #headline section {
+        position: relative;
+        top: 2.969em;
+    }
+}
+    
+@media all and (min-width: 48em) {
+    body {
+        font-size: 100%;
+    }
+    
+    #headline {
+        background: url(../img/bg_768.jpg) no-repeat center center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        font-size: 100%;
+        margin-top: 3em;
+        padding-bottom: 30.03%;
+    }
+    
+    section, .fotorama, #photos section {
+        width: 38.75em; /*620/780px */
+        margin: auto;    
+    }
+    
+    #headline section {
+        position: relative;
+        top: 9.969em;
+        width: 38.75em;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+
+    nav ul {
+        width: 37.5em;
+        margin: auto;
+        overflow: auto;
+        padding: 0 1.612903%;
+    }
+    
+    nav li {
+        margin-right: 16.451813%;
+        margin-left: 0;
+        width: auto;
+        text-align: left;
+    }
+    
+    nav li:last-child {
+        margin-right: 0;
+    }
+    
+    .map {
+        padding-bottom: 31.03%;
+    }
+    
+}
