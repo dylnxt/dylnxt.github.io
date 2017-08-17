@@ -1,0 +1,141 @@
+body {
+	font: 12px/1.4em Arial, Helvetica, sans-serif;
+	color: #524a3d;
+}
+
+form {
+	
+	
+}
+
+form.signUpForm {
+	width: 495px;
+	padding-left:60px;
+}
+
+form.login {
+	width: 270px;
+	float: left;
+	padding-left: 20px;
+}
+
+h2 {
+	font-family: Cooper, "Cooper Black", "Comic Sans MS", cursive;
+	font-size: 24px;
+	color: #f4769d;
+	text-transform:uppercase;
+	background: url(../img/signUp_bg.png) repeat-x;
+	height: 30px;
+	padding-top: 16px;
+	padding-left: 20px;
+	margin-bottom: 24px;
+}
+
+::selection {
+	background: #ffb7b7; /* Safari */
+	}
+::-moz-selection {
+	background: #ffb7b7; /* Firefox */
+}
+
+h3, legend {
+	font-size: 145%;
+	font-weight:bold;
+	margin-bottom: .9em;
+}
+
+
+p {
+	margin-bottom: 1.5em;
+	clear: both;
+}
+
+label {
+	float: left;
+	display: inline-block;
+	
+}
+
+.signUpForm label {
+	width: 178px;
+}
+
+.login label {
+	width: 80px;
+}
+
+input, select {
+	border: 1px solid #545454;
+	float: left;
+	margin-bottom: .9em;
+	padding: 2px;
+	color: #524a3d;
+}
+
+.signUpForm input, select {
+	width: 220px;
+}
+
+.login input {
+	width: 170px;
+}
+
+
+input[type='checkbox'] {
+	width: auto;
+	border: 0;
+	padding: 0;
+}
+
+.buttons {
+	overflow: auto;
+	clear: both;
+	
+}
+
+.signUpForm .buttons {
+	margin-left: 180px;
+}
+
+.login .buttons {
+	margin-left: 80px;
+}
+
+input[type='button'], input[type='submit'] {
+	border: 1px solid #fee4ab;
+	font-family: Cooper, "Cooper Black", "Comic Sans MS", cursive;
+	color: #fff;
+	background-color: #68c3d5;
+	text-transform:uppercase;
+	margin-right: 8px;
+	border-radius: 10px;
+	padding: 8px;
+	width: auto;
+}
+input[type='button']:hover, input[type='submit']:hover {
+	cursor: pointer;
+}	
+
+a:link, a:visited {
+	color: #f4769d;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#newCustomer {
+	background-color: #707070;
+	color: #fff;
+	width: 296px;
+	padding: 12px;
+	float: left;
+	margin-top: 32px;
+}
+
+input[type="submit"]::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner { /* remove buttons' border in firefox */
+     border: 0;
+}

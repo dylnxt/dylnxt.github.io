@@ -1,0 +1,788 @@
+html {
+	background: url(../img/body_bg.jpg) repeat;
+}
+
+body {
+	background:url(../img/bg_top_main.jpg)0 0 repeat-x;
+	font: 12px/1.4em Arial, Helvetica, sans-serif;
+	color: #524a3d;
+}
+
+body#shopDetailsPage {
+	background:url(../img/bg_top.jpg)0 0 repeat-x;
+}
+
+@font-face {
+    font-family: 'ExtrafineRegular';
+    src: url('font/extrafine-webfont.eot');
+    src: url('font/extrafine-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/extrafine-webfont.woff') format('woff'),
+         url('font/extrafine-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+::selection {
+	background: #ffb7b7; /* Safari */
+	}
+::-moz-selection {
+	background: #ffb7b7; /* Firefox */
+}
+
+.texture {
+	background: transparent url(../img/texture.png) top left repeat;
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	opacity: .6;
+}
+
+h1, h3, h4, h5, p, small, ul, a, input, ul, li, figure, #slider, span, textarea, img {
+	position: relative;
+	z-index: 5;
+}
+
+h2 {
+	font-family: Cooper, "Cooper Black", "Comic Sans MS", cursive;
+	font-size: 24px;
+	color: #f4769d;
+	text-transform:uppercase;
+}
+
+#homePage h2 {
+	background: url(../img/rp-sprite.png) -317px -337px no-repeat;
+	width: 190px;
+	height: 36px;
+	padding-top: 22px;
+	padding-left: 28px;
+}
+
+#shopPage h2, #shopDetailsPage h2 {
+	background: url(../img/rp-sprite.png) -544px -337px no-repeat;
+	width: 220px;
+	height: 36px;
+	padding-top: 22px;
+	padding-left: 28px;	
+	float: left;
+}
+
+#shopDetailsPage h2.shortHeader {
+	background: url(../img/rp-sprite.png) -819px -277px  no-repeat;
+	width: 218px;
+	height: 36px;
+	padding-top: 22px;
+	padding-left: 30px;	
+}
+
+h3 {
+	font-size: 145%;
+	font-weight:bold;
+	margin-bottom: 1.2em;
+	
+}
+
+h4 {
+	font-size: 118%;
+	font-weight: bold;
+	margin-bottom: 1.2em;
+}
+
+p {
+	margin-bottom: 1.2em;
+}
+
+strong {
+	font-weight:bold;
+}
+
+header {
+	overflow: auto;
+}
+
+nav {
+	background: url(../img/rp-sprite.png) 0 0 no-repeat;
+	width: 587px;
+	height: 83px;
+	padding-top: 28px;
+	padding-left: 42px;
+	float: right;
+	position:relative;
+	top: 11px;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav a:link, nav a:visited {
+	font-family: Cooper, "Cooper Black", "Comic Sans MS", cursive;
+	text-decoration: none;
+	color: #524a3d;
+	display: block;
+	font-size: 13px;
+	text-transform:uppercase
+}
+
+nav a:hover {
+	color: #f4769d;
+}
+
+a.home:link, a.home:visited {
+	background: url(../img/rp-sprite.png) 0 -121px no-repeat;
+	height: 15px;
+	width: 42px;
+	padding-top: 40px; 
+	margin-right: 42px;
+}
+
+a.home:hover, #homePage a.home {
+	background: url(../img/rp-sprite.png) 0 -180px no-repeat;
+	color: #f4769d;
+}
+
+a.shop:link, a.shop:visited {
+	background: url(../img/rp-sprite.png) -65px -121px no-repeat;
+	height: 15px;
+	width: 41px;
+	padding-left: 4px;
+	padding-top: 40px; 
+	margin-right: 52px;
+}
+
+a.shop:hover , #shopPage a.shop, #shopDetailsPage a.shop {
+	background: url(../img/rp-sprite.png) -65px -180px no-repeat;
+	color: #f4769d;
+}
+
+a.faq:link, a.faq:visited {
+	background: url(../img/rp-sprite.png) -152px -121px no-repeat;
+	height: 15px;
+	width: 41px;
+	padding-left: 4px;
+	padding-top: 40px; 
+	margin-right: 38px;
+}
+
+a.faq:hover {
+	
+}
+
+a.genInfo:link, a.genInfo:visited {
+	background: url(../img/rp-sprite.png) 0 -244px no-repeat;
+	height: 15px;
+	width: 174px;
+	padding-top: 40px; 
+	margin-right: 20px;
+}
+
+a.contact:link, a.contact:visited {
+	background: url(../img/rp-sprite.png) -272px -121px no-repeat;
+	height: 15px;
+	width: 92px;
+	padding-left: 4px;
+	padding-top: 40px; 
+}
+	
+
+#searchField {
+	background: url(../img/rp-sprite.png) -317px -277px no-repeat;
+	width: 286px;
+	height: 36px;
+	padding-left: 26px;
+	padding-top: 12px;
+	float: right;
+	margin-right: 10px;
+	
+}
+
+input.searchType {
+	width: 190px;
+	border: 0;
+	background: transparent;
+}
+
+input#searchBtn {
+	border: 0;
+	background: none;
+	font-family: Cooper, "Cooper Black", "Comic Sans MS", cursive;
+	color: #fece66;
+	text-transform: uppercase;
+	margin-left: 14px;
+	padding: 4px;
+	cursor: pointer;
+	font-size: 11px;
+	text-shadow: 0 0 1px #f4769d;
+}
+
+#signUp {
+	background: url(../img/rp-sprite.png) -649px -277px no-repeat;
+	width: 130px;
+	height: 35px;
+	font-family: Cooper, "Cooper Black", "Comic Sans MS", cursive;
+	font-size: 11px;
+	text-transform: uppercase;
+	padding-left: 30px;
+	padding-top: 18px;
+	float: right;
+	color: #fece66;
+	text-shadow: 0 0 1px #a87301;
+}
+
+#signUp a  {
+	text-decoration: none;
+	color: #fece66;
+	background: none;
+	
+}
+
+#signUp a:hover {
+	text-decoration: underline;
+}
+
+img.logo {
+	display: block;
+	float: left;
+	position: relative;
+	top: -28px;
+	clear:both;
+	z-index:5;
+}
+
+#wrapper {
+	width: 980px;
+	margin: auto;
+	padding-top:14px;
+}
+
+#featured {
+	background: url(../img/new_banner.png) top left no-repeat;
+	width: 945px;
+	height: 464px;
+}
+
+#homePage #category {
+	position: relative;
+	left: 750px;
+	bottom: 110px;
+	width: 156px;
+}
+
+#category {
+	font-family: 'ExtrafineRegular', "Comic Sans MS", cursive, script;
+	font-size: 16px;
+	width: 156px;
+	line-height: 1.1em
+}
+
+.sideBar {
+	background: url(../img/rp-sprite.png) -738px -664px no-repeat;
+	width: 222px;
+	height: 266px;	
+}
+
+aside.sideBar > ul {
+	position: relative;
+	left: 20px;
+}
+
+.sideBar h3 {
+	font-family: Cooper, "Cooper Black", "Comic Sans MS", cursive;
+	color: #fece66;
+	font-size: 24px;
+	margin-left: 38px;
+	padding-top: 18px;
+	margin-bottom: 1.5em;
+	text-transform: uppercase;
+}
+
+#category a:link, #category a:visited {
+	text-decoration: none;
+	color: #524a3d;
+	padding-left: 16px;
+	
+}
+
+#category a:hover, #category a.current {
+	background: url(../img/star_black.png) 0 50% no-repeat;
+}
+
+#category a.special, a.special {
+	color: #ab001e;
+}
+
+#footer {
+	background: url(../img/bg_foot.jpg);
+	width: 1280px;
+	height: 331px;
+	margin: auto;
+	position: relative;
+}
+
+figure {
+	display: inline-block;
+}
+
+#homePage figure {
+	/*width: 311px;*/
+	margin-top: 20px;
+}
+
+#homePage figure > div {
+	background: url(../img/rp-sprite.png) -738px -453px no-repeat;
+	width: 301px;
+	height: 194px;
+	display: block;
+	padding-left: 10px;
+	padding-top: 7px;
+}
+
+#shopPage figure {
+	margin-top: 20px
+}
+
+#shopPage figure > div {
+	background: url(../img/rp-sprite.png) -420px -862px no-repeat;
+	width: 232px;
+	height: 300px;
+	padding-left: 10px;
+	padding-top: 11px;	
+}
+
+figcaption {
+	text-align:right;
+	margin-top: 2px;
+	font-weight: bold;
+}
+
+.price {
+	color: #f4769d;
+}
+
+footer {
+	text-align:center;
+	display: block;
+	font-size: 11px;
+	background: url(../img/bg_foot.jpg) 0 0 no-repeat;
+	height: 120px;
+	padding-top: 130px;
+	width: 100%;
+	margin: auto;
+	background-size: cover;
+}
+
+footer p.footerLinks {
+	text-transform:uppercase;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #524a3d;
+	
+	
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+span.divider {
+	background: url(../img/star_pink_s.gif) 0 40% no-repeat;
+	width: 8px;
+	height: 18px;
+	display: inline-block;
+}
+
+#categoryItems {
+	width: 740px;
+	float: right;
+	position: relative;
+	overflow: hidden;
+}
+
+section {
+	overflow: auto;
+	position: relative;
+}
+
+.breadCrumb {
+	float: right;
+	margin-top: 28px;
+}
+
+.breadCrumb a:link, .breadCrumb a:visited {
+	text-decoration: none;
+	color: #524a3d;
+}
+
+.breadCrumb .current, .breadCrumb a:hover {
+	color: #f4769d;
+}
+
+.catTitle {
+	clear: both;
+	overflow:auto;
+	margin-bottom: 2em;
+}
+
+.itemDetails div {
+	background: url(../img/rp-sprite.png) -420px -449px no-repeat;
+	width: 304px;
+	height: 393px;
+	padding-left: 10px;
+	padding-top: 10px;
+	margin-bottom: .2em;
+	position: relative;
+}
+
+.itemInfo {
+	background: url(../img/rp-sprite.png) 0 -453px no-repeat;
+	width: 351px;
+	height: 439px;
+	float: right;
+	padding: 32px;
+}
+
+a.description {
+	font-family: Cooper, "Cooper Black", "Comic Sans MS", cursive;
+	color: #fff;
+	background-color: #5ec2dc;
+	padding: 8px 10px;
+	border-radius: 20px;
+	text-decoration: none;
+	
+}
+
+a.washGuide {
+	font-family: Cooper, "Cooper Black", "Comic Sans MS", cursive;
+	color: #fff;
+	background-color: #959595;
+	padding: 8px 10px;
+	border-radius: 20px;
+	text-decoration: none;
+}
+
+a.addToCart {
+	font-family: Cooper, "Cooper Black", "Comic Sans MS", cursive;
+	color: #fece66;
+	background-color: #f4769d;
+	border: 3px solid #f89eba;
+	text-decoration: none;
+	width: 125px;
+	display: block;
+	text-align:center;
+	margin: auto;
+	font-size: 18px;
+	padding: 8px 0;
+	border-radius: 6px;
+}
+
+
+div.similar {
+	width: 101px;
+	height: 64px;
+	background: url(../img/rp-sprite.png) -903px -343px no-repeat;
+	padding-left: 3px;
+	padding-top: 3px;
+	float: left;
+}
+
+div.similar img {
+	width: 99px;
+	height: 62px;
+}
+
+#viewBag {
+	position: absolute;
+	z-index: 7;
+	width: 51px;
+	height: 51px;
+	padding: 14px 10px 10px 6px;
+	background: url(../img/rp-sprite.png) 0 -349px no-repeat;
+	color: #fff;
+	text-align: center;
+	right: 0;
+	margin-top: 42px;
+	
+}
+#viewBag h5 {
+	font-family: Cooper, "Cooper Black", "Comic Sans MS", cursive;
+	color: #f4769d;
+	font-size: 10px;
+	text-transform:uppercase;
+	line-height: 1em;	
+	z-index: 3;
+}
+
+#content {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.photoBook {
+	position: absolute;
+	top:350px;
+	left: 80px;
+	background: url(../img/rp-sprite.png) -517px -183px no-repeat;
+	width: 124px;
+	height: 27px;
+	color: #fff;
+	padding-left: 42px;
+	padding-top: 8px;
+	text-decoration: none;
+}
+
+#myBook {
+	display: none;
+}
+
+.arrowDeco {
+	background: url(../img/rp-sprite.png) -92px -349px no-repeat;
+	height: 57px;
+	width: 33px;
+	display: block;	
+	left: 96%;
+	top: 180px;
+	position: relative;
+}
+
+.sheepDeco {
+	background: url(../img/rp-sprite.png) -153px -349px no-repeat;
+	height: 48px;
+	width: 70px;
+	display: block;	
+	left: 90%;
+	top: 0px;
+	position: absolute;
+}
+
+input[type='button'], input[type='submit'] {
+	border: 1px solid #fee4ab;
+	font-family: Cooper, "Cooper Black", "Comic Sans MS", cursive;
+	color: #fff;
+	background-color: #68c3d5;
+	text-transform:uppercase;
+	margin-right: 8px;
+	border-radius: 10px;
+	padding: 8px;
+	width: auto;
+}
+input[type='button']:hover, input[type='submit']:hover {
+	cursor: pointer;
+}
+
+#general {
+	background: url(../img/rp-sprite.png) 0 -1204px no-repeat;
+	width: 723px;
+	height: 566px;
+	overflow:hidden;
+	position: relative;
+	
+}
+
+table.item {
+	width: 680px;
+	font-weight: bold;
+	margin: 0 auto 12px;
+	
+}
+
+.item tr {
+	border-bottom: 1px dashed #f8dca1;
+	
+}
+
+.item tbody td {
+	vertical-align: top;
+	padding-bottom: 12px;
+	padding-top: 21px;
+}
+
+.item tfoot td {
+	padding: 4px;
+}
+
+input.quantityInBag {
+	border: 1px solid #f8dca1;
+	width: 40px;
+	padding: 2px;
+	float: none;
+}
+
+.item div {
+	width: 101px;
+	height: 64px;
+	background: url(../img/rp-sprite.png) -903px -343px no-repeat;
+	
+}
+
+.item img {
+	width: 99px;
+	height: 62px;
+}
+
+.item .size {
+	font-weight: 400;
+}
+
+a.removeItem {
+	color: #ab001e;
+	text-decoration:none;
+	font-weight: 400;
+}
+
+a.removeItem:hover {
+	text-decoration: underline;
+}
+
+.btnsAlign {
+	float: right;
+	margin-top: 1.5em;
+}
+
+#checkoutSteps { 
+	font-family: Cooper, "Cooper Black", "Comic Sans MS", cursive;
+	text-transform: uppercase;
+	width: 185px;
+	font-size: 14px;
+	background-color: #fbd482;
+	height: 100%;
+	margin: 2px 0 0 3px;
+	
+	
+}
+
+#checkoutSteps a {
+	height: 30px;
+	color: #877a64;
+	text-decoration: none;
+	padding: 20px 20px 20px 50px;
+	display: block;
+	border-bottom: 2px dashed #f7e2ba;
+	width: 115px;
+	background-color: #f9d27f;
+	height: 100%;
+	position: relative;
+	
+}
+
+#checkoutSteps a:hover, #checkoutSteps a.checkoutCurrent {
+	color: #fbd482;
+}
+
+#checkoutSteps a.checkoutStep1 {
+	background: url(../img/1_ol.png) 10% 50% no-repeat;
+	
+}
+
+#checkoutSteps a.checkoutStep1:hover, #checkoutSteps a.checkoutCurrent.step1 {
+	background: #C1464B url(../img/1_ol_current.png) 10% 50% no-repeat;
+}
+
+
+#checkoutSteps a.checkoutStep2 {
+	background: url(../img/2_ol.png)  10% 50% no-repeat;	
+}
+
+#checkoutSteps a.checkoutStep2:hover, #checkoutSteps a.checkoutCurrent.step2 {
+	background: #C1464B url(../img/2_ol_current.png)  10% 50% no-repeat;	
+}
+
+#checkoutSteps a.checkoutStep3 {
+	background: url(../img/3_ol.png)  10% 50% no-repeat;	
+}
+
+#checkoutSteps a.checkoutStep3:hover, #checkoutSteps a.checkoutCurrent.step3 {
+	background: #C1464B url(../img/3_ol_current.png)  10% 50% no-repeat;	
+}
+
+#checkoutSteps a.checkoutStep4 {
+	background: url(../img/4_ol.png)  10% 50% no-repeat;	
+}
+
+#checkoutSteps a.checkoutStep4:hover, #checkoutSteps a.checkoutCurrent.step4 {
+	background: #C1464B url(../img/4_ol_current.png)  10% 50% no-repeat;	
+}
+
+/*css arrows as used in checkout pages*/
+#checkoutSteps a:hover:after, #checkoutSteps a:hover:before, 
+#checkoutSteps a.checkoutCurrent:after, #checkoutSteps a.checkoutCurrent:before {
+	left: 100%; 
+	border: solid transparent; 
+	content: " "; 
+	height: 0; 
+	width: 0; 
+	position: absolute; 
+	pointer-events: none;
+}
+
+#checkoutSteps a:hover:after, #checkoutSteps a.checkoutCurrent:after {
+	border-left-color: #C1464B; 
+	border-width: 12px; 
+	top: 50%; 
+	margin-top: -12px;
+}
+
+#checkoutSteps a:hover:before, #checkoutSteps a.checkoutCurrent:before {
+	border-left-color: #fbd482; 
+	border-width: 13px; 
+	top: 50%; 
+	margin-top: -13px;
+}
+
+#checkOutForm {
+	width: 400px;
+	position: absolute;
+	top: 31px;
+	left: 260px;
+	
+}
+
+#checkOutForm legend {
+	color: #524a3d;
+	font-weight: bold;
+	margin-bottom: 1.5em;
+}
+
+#checkOutForm p {
+	clear:both;
+}
+input, select {
+	border: 1px solid #545454;
+	float: left;
+	margin-bottom: .9em;
+	padding: 2px;
+	color: #524a3d;
+	width: 222px;
+}
+
+label {
+	float: left;
+	display: inline-block;
+	width: 160px;
+}
+
+input[type='checkbox'], input[type='radio'] {
+	width: auto;
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	width: 320px;
+	height: 170px;
+	border: 1px solid #545454;
+	padding: 2px;
+	color: #524a3d;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+input[type="submit"]::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner { /* remove buttons' border in firefox */
+     border: 0;
+}
