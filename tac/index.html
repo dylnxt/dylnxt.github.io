@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Adventus Consultants</title>
+<link href="inc/css/reset.css" rel="stylesheet" media="screen">
+<link href="inc/css/styles.css" rel="stylesheet" media="screen">
+<link href="inc/css/scrollable-horizontal.css" rel="stylesheet" media="screen">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="inc/js/jquery.tools.min.js"></script>
+<script src="inc/js/random_quotes.js"></script>
+<script>
+// What is $(document).ready ? See: http://flowplayer.org/tools/documentation/basics.html#document_ready
+$(document).ready(function() {
+
+// initialize scrollable together with the navigator plugin
+$("#browsable").scrollable({circular: true}).autoscroll(5000,{autopause: true}).navigator();	
+});
+</script>
+</head>
+
+<body id="homePage">
+	<div id="wrapper">
+    	<div id="masthead">
+        	<img src="im/tac-logo.png" alt="t.a.c internet consultancy" />    
+            <ul id="nav">
+            	<li id="home"><a href="index.html">home</a></li>
+                <li id="works"><a href="work_all.html">our works</a></li>
+                <li id="labs"><a href="lab_expresso.html">our labs</a></li>
+                <li id="about"><a href="about.html">about us</a></li>
+            </ul>      
+        </div>
+        <!-- end masthead -->
+        <!-- root element for scrollable -->
+		<div class="scrollable" id="browsable">
+        	<div class="items">
+        
+          <div id="twit">
+              <div id="twitBubble">
+                  <ul id="twitBubbleText">
+                    <li>
+                      <p class="quote">The internet fills me with passion and hope!</p>
+                      <p>posted by <span>The Racer</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">Mine ain&rsquo;t no eagle&rsquo;s eyes&hellip;</p>
+                      <p>posted by <span>The Enforcer</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">爱拼才会赢!</p>
+                      <p>posted by <span>Captain Rainbow</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">Conformist, we should not be!</p>
+                      <p>posted by <span>Captain Rainbow</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">I&rsquo;ve checked the database, it is NOT there! </p>
+                      <p>posted by <span>Captain Rainbow</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">&ldquo;Swwwaaaaatch!&rdquo;</p>
+                      <p>posted by <span>The Ultraman </span></p>
+                    </li>
+                    <li>
+                      <p class="quote">&ldquo;.......... , ......... , ...........&rsquo;</p>
+                      <p>posted by <span>The Ultraman </span></p>
+                    </li>
+                    <li>
+                      <p class="quote">For design, call Tuckwai. For U.I, call Dylan. Just don't call me </p>
+                      <p>posted by <span>The Ultraman </span></p>
+                    </li>
+                    <li>
+                      <p class="quote">Tough time don&rsquo;t last, Tough man do</p>
+                      <p>posted by <span>The Stealth</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">Always begin with an END in mind</p>
+                      <p>posted by <span>The Stealth</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">Music is what emotion sounds</p>
+                      <p>posted by <span>The Stealth</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">It's hard to joke, if the joke is clean</p>
+                      <p>posted by <span>The Stealth</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">I am gay, if you think I&rsquo;m not </p>
+                      <p>posted by <span>The Stealth</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">A good system will always give 20points? Edit NOW!</p>
+                      <p>posted by <span>The Volleyballer</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">I deserve my 20 points, don't blame on database.</p>
+                      <p>posted by <span>The Volleyballer</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">I will be good if you credit 20 points to my total.</p>
+                      <p>posted by <span>The Volleyballer</span></p>
+                    </li>
+                     <li>
+                      <p class="quote">I&rsquo;m haunting you just because of 20 points.</p>
+                      <p>posted by <span>The Volleyballer</span></p>
+                    </li>
+                     <li>
+                      <p class="quote">红辰吉日??</p>
+                      <p>posted by <span>The Volleyballer</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">Wars are won by fighting many battles </p>
+                      <p>posted by <span>The Cyclist</span></p>
+                    </li>
+                    <li>
+                      <p class="quote">I&rsquo;m not sleeping, I&rsquo;m thinking deep conceptual design ideas with my eyes closed.</p>
+                      <p>posted by <span>The Sleepaholic</span></p>
+                    </li>
+                  </ul>
+                  <!-- end twitBubbleText -->
+              </div>
+              <div id="twitIcon">
+              <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="170" height="170" id="FlashID" title="twit">
+                <param name="movie" value="flash/index_twit.swf">
+                <param name="quality" value="high">
+                <param name="wmode" value="transparent">
+                <param name="swfversion" value="9.0.45.0">
+                <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+                <param name="expressinstall" value="../Scripts/expressInstall.swf">
+                <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                <!--[if !IE]>-->
+                  <object type="application/x-shockwave-flash" data="flash/index_twit.swf" width="170" height="170">
+                  <!--<![endif]-->
+                  <param name="quality" value="high">
+                  <param name="wmode" value="transparent">
+                  <param name="swfversion" value="9.0.45.0">
+                  <param name="expressinstall" value="../Scripts/expressInstall.swf">
+                  <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                  <div>
+                    <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                    <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+                  </div>
+              <!--[if !IE]>-->
+                  </object>
+            <!--<![endif]-->
+              </object>
+              </div>
+          </div>
+          <!-- end twit -->
+          
+          <div id="crayonWorks">
+          	<div id="crayonFeaturedWork"><h4>FEATURED WORK</h4></div>
+            <div id="crayonFeaturedDescription"><span>Novena World Cup Prediction</span></div>
+            <div id="crayonBubble">
+              <a href="work_s_worldcup.html"><img src="im/screencap/ourwork/work_velocity_world_2.jpg" alt="featured project" /></a>
+            </div>
+       
+            <!-- end crayonBubble-->
+            <div id="crayonIcon">
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="170" height="170" id="FlashID2" title="works">
+                <param name="movie" value="flash/index_work.swf">
+                <param name="quality" value="high">
+                <param name="wmode" value="transparent">
+                <param name="swfversion" value="9.0.45.0">
+                <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+                <param name="expressinstall" value="../Scripts/expressInstall.swf">
+                <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="flash/index_work.swf" width="170" height="170">
+                  <!--<![endif]-->
+                  <param name="quality" value="high">
+                  <param name="wmode" value="transparent">
+                  <param name="swfversion" value="9.0.45.0">
+                  <param name="expressinstall" value="../Scripts/expressInstall.swf">
+                  <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                  <div>
+                    <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                    <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+                  </div>
+                  <!--[if !IE]>-->
+                </object>
+                <!--<![endif]-->
+            </object>
+            </div>
+            <!-- end crayonIcon -->
+        </div>
+          <!-- end crayonWorks -->
+          
+          <div id="labRat">
+          
+          <div id="ratFeaturedWork"><h4>FEATURED EXPERIMENT</h4></div>
+          <div id="ratFeaturedDescription"><span>Expresso</span></div>
+          <div id="ratBubble">          
+          <a href="lab_expresso.html"><img src="im/screencap/ourlab/lab_espresso_4.jpg" alt="featured project" /></a>
+          </div>
+          <!-- end ratBubble -->
+          <div id="ratIcon">
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="170" height="170" id="FlashID3" title="labs">
+              <param name="movie" value="flash/index_lab.swf">
+              <param name="quality" value="high">
+              <param name="wmode" value="transparent">
+              <param name="swfversion" value="9.0.45.0">
+              <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+              <param name="expressinstall" value="../Scripts/expressInstall.swf">
+              <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+              <!--[if !IE]>-->
+              <object type="application/x-shockwave-flash" data="flash/index_lab.swf" width="170" height="170">
+                <!--<![endif]-->
+                <param name="quality" value="high">
+                <param name="wmode" value="transparent">
+                <param name="swfversion" value="9.0.45.0">
+                <param name="expressinstall" value="../Scripts/expressInstall.swf">
+                <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                <div>
+                  <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                  <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+                </div>
+                <!--[if !IE]>-->
+              </object>
+              <!--<![endif]-->
+            </object>
+          </div>
+          <!-- end ratIcon -->
+          </div>
+          <!-- end labRat -->
+          </div>
+          <!-- end items -->
+        </div>
+        <!-- end scrollable -->
+        <div class="scrollableContainer">
+        	<a class="prev browse left"></a>
+			<div class="navi"></div>
+            <a class="next browse right"></a>
+            
+        </div>
+        <p class="indexInstruct">Pause up to read up; mouse over the characters</p>
+        <span id="footer">&copy; 2010 The Adventus Consultants <a href="http://bit.ly/bPvpZR"><img src="im/icon-fb.png" /></a></span>
+
+
+    </div>
+	
+    <!-- end wrapper -->
+    
+          
+    
+<script type="text/javascript">
+<!--
+swfobject.registerObject("FlashID");
+swfobject.registerObject("FlashID2");
+swfobject.registerObject("FlashID3");
+//-->
+</script>
+
+
+</body>
+</html>
